@@ -22,6 +22,7 @@ public class LegitilocalchatterClient implements ClientModInitializer {
     public static Logger LOGGER;
     public static String LOGGER_NAMESPACE = "LegitiLocalChatter";
     public static String CHAT_PREFIX;
+    public static final String VERSION = "0.1"; // Make sure to update this when the version changes
 
     private static KeyBinding keyBinding;
 
@@ -31,6 +32,7 @@ public class LegitilocalchatterClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         LOGGER = LogManager.getLogger(LOGGER_NAMESPACE);
+        LOGGER.info("Loaded LegitiLocalChatter version " + VERSION);
 
         keyBinding = KeyBindingHelper.registerKeyBinding(
                 new KeyBinding(
