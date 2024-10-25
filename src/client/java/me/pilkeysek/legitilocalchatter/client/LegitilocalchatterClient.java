@@ -22,7 +22,7 @@ public class LegitilocalchatterClient implements ClientModInitializer {
     public static Logger LOGGER;
     public static String LOGGER_NAMESPACE = "LegitiLocalChatter";
     public static String CHAT_PREFIX;
-    public static final String VERSION = "0.1"; // Make sure to update this when the version changes
+    public static final String VERSION = "0.2"; // Make sure to update this when the version changes
 
     private static KeyBinding keyBinding;
 
