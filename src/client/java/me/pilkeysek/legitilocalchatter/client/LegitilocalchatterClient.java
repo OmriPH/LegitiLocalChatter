@@ -48,7 +48,7 @@ public class LegitilocalchatterClient implements ClientModInitializer {
             while(keyBinding.wasPressed()) {
                 assert MinecraftClient.getInstance().player != null;
                 ENABLED = !ENABLED;
-                MinecraftClient.getInstance().player.sendMessage(Text.translatable("chat.legitilocalchatter.legitilocalchatterIsNow").formatted(Formatting.AQUA).append(ENABLED ? Text.translatable("chat.legitilocalchatter.enabled").formatted(Formatting.GREEN) : Text.translatable("chat.legitilocalchatter.disabled").formatted(Formatting.RED)));
+                MinecraftClient.getInstance().player.sendMessage(Text.translatable("chat.legitilocalchatter.legitilocalchatterIsNow").formatted(Formatting.AQUA).append(ENABLED ? Text.translatable("chat.legitilocalchatter.enabled").formatted(Formatting.GREEN) : Text.translatable("chat.legitilocalchatter.disabled").formatted(Formatting.RED)), false);
             }
         });
 
